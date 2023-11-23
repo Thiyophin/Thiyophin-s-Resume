@@ -268,3 +268,42 @@
   new PureCounter();
 
 })()
+$("#submit-form").submit((e)=>{
+	let name = document.forms.submitfrm.name.value;
+	let email = document.forms.submitfrm.email.value;
+	let subject = document.forms.submitfrm.subject.value;
+	let message = document.forms.submitfrm.message.value;
+
+	if(name==""){
+		alert("Name Must be filed out");
+		return false;
+	}else if($.isNumeric(name)){
+		alert("The Name can Only conatain Alphabets");
+		return false;
+	} else if(email==""){
+		alert("Email must be filled out");
+		return false;
+	}else if(message==""){
+		alert("message must be filled out");
+		return false;
+	}else{
+	e.preventDefault()
+	$.ajax({
+		url:"https://script.google.com/macros/s/AKfycbwwbsFcL0TI6MqEiEuI-ZoxNzO0WcfbrFr8-CKAMux8JmCui3AsTLer-lGK1f7t6J39Iw/exec",
+		data:$("#submit-form").serialize(),
+		method:"post",
+		success:function (response){
+			alert("Form submitted successfully")
+			window.location.reload()
+			//window.location.href="https://google.com"
+		},
+		error:function (err){
+			alert("Something Error")
+
+		}
+	})
+	}
+
+	
+})
+
