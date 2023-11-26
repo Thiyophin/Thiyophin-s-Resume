@@ -1,6 +1,1 @@
-Thanks for downloading this template!
-
-Template Name: MyResume
-Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+ Unveiling my personal website crafted with HTML, CSS, JS, and Bootstrap - [Link](https://thiyophin.github.io/Thiyophin-s-Resume/)
