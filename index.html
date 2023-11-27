@@ -404,7 +404,7 @@
           <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 portfolio-item filter-web" >
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/netflix_home_page.jpg" loading="lazy" class="img-fluid" alt="" style="height: 100%; object-fit: cover;">
+                <img src="assets/img/portfolio/netflix_home_page.jpg" loading="lazy" class="img-fluid h-100" alt="" style="height: 100%; object-fit: cover;">
                 <div class="portfolio-info">
                   <h4>Netflix Homepage Clone</h4>
                   <p>Netflix Homepage Clone</p>
@@ -419,7 +419,7 @@
   
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 portfolio-item filter-web">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/todolist_homepage.jpg" class="img-fluid" alt="" loading="lazy" style="height: 100%; object-fit: cover;">
+                <img src="assets/img/portfolio/todolist_homepage.jpg" class="img-fluid h-100" alt="" loading="lazy" style="height: 100%; object-fit: cover;">
                 <div class="portfolio-info">
                   <h4>TodoList</h4>
                   <p>TodoList</p>
@@ -433,7 +433,7 @@
   
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 portfolio-item filter-web">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/raspberry_pi_homepage_clone.jpg" class="img-fluid" alt="" loading="lazy" style="height: 100%; object-fit: cover;">
+                <img src="assets/img/portfolio/raspberry_pi_homepage_clone.jpg" class="img-fluid h-100" alt="" loading="lazy" style="height: 100%; object-fit: cover;">
                 <div class="portfolio-info">
                   <h4>Raspberry pi Homepage Clone</h4>
                   <p>Raspberry pi Homepage Clone</p>
@@ -446,61 +446,68 @@
             </div>
           </div>
       <!-- End Portfolio Section -->
+       <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
 
-      <!-- ======= Contact Section ======= -->
-      <section id="contact" class="contact">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>Contact</h2>
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row mt-1">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Kochi, Kerala</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>thiyophin@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                  <p>+91 8921362009</p>
+              </div>
+
+            </div>
+
           </div>
 
-          <div class="row mt-1">
-            <div class="col-lg-4">
-              <div class="info">
-                <div class="address">
-                  <i class="bi bi-geo-alt"></i>
-                  <h4>Location:</h4>
-                  <p>Kochi, Kerala</p>
-                </div>
+          <div class="col-lg-8 mt-5 mt-lg-0">
 
-                <div class="email">
-                  <i class="bi bi-envelope"></i>
-                  <h4>Email:</h4>
-                  <p>thiyophin@gmail.com</p>
+            <form method="post" role="form" class="php-email-form" id="submit-form" name="submitfrm" action="">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
                 </div>
-
-                <div class="phone">
-                  <i class="bi bi-phone"></i>
-                  <h4>Call:</h4>
-                  <p>+91 8921362009</p>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
                 </div>
               </div>
-            </div>
-
-            <div class="col-lg-8 mt-5 mt-lg-0">
-              <form method="post" role="form" class="php-email-form" id="submit-form" name="submitfrm" action="">
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                  </div>
-                  <div class="col-md-6 form-group mt-3 mt-md-0">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                  </div>
-                </div>
-                <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                </div>
-                <div class="form-group mt-3">
-                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                </div>
-                <div class="text-center"><button type="submit" onclick='return confirm("Do you want to submit?")'>Send Message</button></div>
-              </form>
-
-            </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit" onclick='return confirm("Do you want to submit?")'>Send Message</button></div>
+            </form>
           </div>
         </div>
-      </section>
-      <!-- End Contact Section -->
+      </div>
+    </section><!-- End Contact Section -->
     </main>
     <!-- End #main -->
 
